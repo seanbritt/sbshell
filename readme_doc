@@ -1,0 +1,67 @@
+-----------------------help file------------------------------------
+
+
+	     Thank you for using myShell!
+
+
+to use myShell, simply type a command and enter.  builtins are 
+listed below, but common shell programs like ls and ps can be 
+run as well.  
+
+at "myShell> ", type the command you want to run followed by 
+any arguments you wish to pass the command.  mode flags,
+including &, <, >, >>, and |, can used to create strings of
+commands, discussed after builtin commands. 
+
+
+
+available builtin commands:
+	
+	cd: 	prints the current directory
+
+		-optional argument: the directory to move to
+
+	
+	dir: 	prints the contents of the current directory
+		
+		-optional argument: the directory to print 
+
+
+	clr: 	clears the screen of the terminal
+
+	
+	environ: prints the environment variables
+
+
+	echo: 	prints the command line following echo
+
+
+	help: 	prints this help file!
+
+
+	pause: 	waits until the user types enter
+
+
+	quit: 	exits myShell
+
+
+
+optional flags:
+	
+	|	used for piping between commands.  in the case of 
+		com1 | com2, send output of com1 to input of com 2
+
+	>,>>,<	used for redirecting output of a command to a file.
+		the command is always on the open side of the bracket.
+		so com1 > out.txt sends the output of com1 to the file
+		out.txt. if out.txt does not exist, it is created. if it
+		exists, it is overwritten for > or <. for >>, the file 
+		is appended.
+
+	&	used to string commands and run each in the background. 
+		com1 & com2 will allow com1 to run simultaneously with 
+		com2. 
+
+
+-----------------------end of help!-------------------------------------
+	
